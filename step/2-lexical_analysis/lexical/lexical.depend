@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1542122025 source:c:\users\cqx\desktop\assignment\compiler\step\2-lexical_analysis\lexical\lexical.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"lexical.h"
+
+1542118202 c:\users\cqx\desktop\assignment\compiler\step\2-lexical_analysis\lexical\lexical.h
+	<stdio.h>
+
+1542118223 source:c:\users\cqx\desktop\assignment\compiler\step\2-lexical_analysis\lexical\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lexical.h"
+

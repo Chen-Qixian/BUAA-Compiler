@@ -1,0 +1,198 @@
+´íÎó¸³Öµ
+
+const int GRIDSIZE = 9;
+const char UNKNOWN = '0', FLAGCHAR = '4';
+const int SQRTSIZE = 3;
+const int TRUE = 1, FALSE = 0;
+
+int n, count;
+int grid[81];
+int mode;
+int line;
+
+void Init(){
+    int i;
+    i = 0;
+    while(i < GRIDSIZE * GRIDSIZE){
+        grid[i] = UNKNOWN;
+        i = i + 1;
+	
+    }
+    grid[0] = FLAGCHAR;
+}
+
+void PrintSudoku(){
+    int i, j;
+    i = line * GRIDSIZE;
+    j = i + GRIDSIZE;
+    while(i < j){
+        printf(grid[i]);
+        i = i + 1;
+
+    }
+}
+
+int IsValid(int pos){
+    int row, column;
+    int i,j;
+    row = pos / GRIDSIZE;
+    column = pos - (row * GRIDSIZE);
+    i = row * GRIDSIZE;
+    while(i < pos){
+        if(grid[i] == grid[pos])
+            return (FALSE);
+        if(grid[i] != grid[pos]){
+            ;
+        }
+        i = i + 1;
+    }
+    i = column;
+    while(i < pos){
+        if(grid[i] == grid[pos])
+            return (FALSE);
+        if(grid[i] != grid[pos]){
+            ;
+        }
+        i = i + GRIDSIZE;
+    }
+    i = ((row / 3) * (3 * GRIDSIZE)) + (column / 3 * 3);
+    j = 0;
+    while(i < pos){
+        if(grid[i] == grid[pos])
+            return (FALSE);
+        if(grid[i] != grid[pos]){
+            ;
+        }
+        if(j == 2){
+            i = i + GRIDSIZE - j;
+            j = 0;
+        }
+        if(j != 2){
+            i = i + 1;
+            j = j + 1;
+        }
+    }
+    return (TRUE);
+}
+
+int GenerateSudoku(int pos){
+    int x, y;
+    int i;
+	
+    if(pos == 81){
+        PrintSudoku();
+        count = + count + 1;
+        if(count == n){
+            return (TRUE);
+        }
+        if(count != n);
+    }
+    if(pos != 81){
+       
+        if(grid[pos] == UNKNOWN){
+            i = 0;
+            while(i < GRIDSIZE){
+                grid[pos] = i + 1 + '0';
+                if(IsValid(pos)){
+                    if(GenerateSudoku(pos + 1) == TRUE){
+                        return (TRUE);
+                    }
+                    if(GenerateSudoku(pos + 1) != TRUE);
+                }
+               
+                grid[pos] = UNKNOWN;
+                i = i + 1;
+            }
+        }
+        if(grid[pos] != UNKNOWN){
+            if(GenerateSudoku(pos + 1) == TRUE){
+                return (TRUE);
+            }
+            if(GenerateSudoku(pos + 1) != TRUE);
+        }
+    }
+    return (FALSE);
+}
+
+int abs(int num){
+    if(num >= 0){
+        return (num);
+    }
+    if(num < 0)
+        return (-num);
+}
+
+void DoNothing(){
+    ;
+}
+
+void main(){
+    int i;
+    int temp[10];
+    int temp2[10];
+    char ch;
+    int a;
+    int b;
+    int c[1];
+    int d;
+    
+    scanf(mode);
+    
+    switch(mode){
+        case 1: {
+            printf("");
+            printf(" !#$%&'()*+,-./");
+            printf("0123456789:;<=>?@");
+            printf("ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`");
+            printf("abcdefghijklmnopqrstuvwxyz{|}~");
+        }
+        case 2: {
+            switch(GRIDSIZE){
+                case 9:
+                    switch(GRIDSIZE){
+                        case 9: {
+                            a = 1;
+                            b = -2;
+                            c[0] = 3;
+                            d = (a * abs(b) + (a * abs(b) + (a * abs(b) + (a * abs(b) + (a * abs(b) + (a * abs(b) + (a * abs(b) + c[0])))))));
+                            printf(d);
+                        }
+                        default:
+                            DoNothing();
+                    }
+            }
+        }
+        case 3: {
+            i = 0;
+            while(i < 10){
+                temp[i] = -i;
+                i = i + 1;
+            }
+            i = 0;
+            while(i < 10){
+                temp2[i] = 'a' + abs(temp[i]) + 0;
+                printf(temp2[i]);
+                i = i + 1;
+            }
+        }
+        case 4: {
+            i = 0;
+            while(i < 4){
+                scanf(ch);
+                temp2[0] = ch;
+                printf(temp2[0]);
+                i = i + 1;
+            }
+        }
+        case 5: {
+            scanf(line);
+            n = 1;
+            count = 0;
+            Init();
+		printf("init succeed!");
+            GenerateSudoku(1);
+        }
+        default: 
+            DoNothing();
+    }
+}

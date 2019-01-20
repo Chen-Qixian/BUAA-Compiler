@@ -1,0 +1,10 @@
+const int I=1,q = 1;
+int c,d;
+int abc[3],i;
+
+void main(){
+    c = abc[I];
+    abc[q] = d;
+    d = I + q;
+    return;
+}

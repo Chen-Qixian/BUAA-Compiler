@@ -1,0 +1,183 @@
+const char cha = 'a'
+const char chb = 'b'
+const char CHA = 'A'
+const char CHB = 'B'
+const int I = 3
+var int c
+var int d
+array int abc
+var int i
+function int expre
+para int a
+para int b
+para int x
+para int y
+para int z
+$T0 = i + 1
+i = $T0  
+c = 0  
+bge i 3 if_1_else
+$T1 = a + b
+$T2 = $T1 * x
+$T3 = 0 - $T2
+$T4 = y * z
+$T5 = $T3 - $T4
+$T6 = 0 - 1
+$T7 = $T5 - $T6
+$T8 = $T7 + 'b'
+push a 
+push b 
+push x 
+push y 
+push z 
+call expre 
+$T9 = RET  
+$T10 = $T8 + $T9
+c = $T10  
+if_1_else:
+write " test_expression c=" 
+write c 
+ret c 
+funcend
+function void test_if
+para int a
+para int b
+var int temp
+temp = 0  
+blt a b if_2_else
+while_1_beg:
+ble a b while_1_end
+temp = a  
+a = b  
+b = temp  
+j while_1_beg
+while_1_end:
+bne a b if_3_else
+if_3_else:
+if_2_else:
+bge a b if_4_else
+if_4_else:
+write " test_if output the less one " 
+write "output " 
+write a 
+funcend
+function void test_while
+i = 0  
+abc[0] = 0  
+abc[1] = 0  
+abc[2] = 0  
+while_2_beg:
+bgt i 3 while_2_end
+beq i 2 if_5_else
+if_5_else:
+bne i 2 if_6_else
+$T0 = i * i
+$T1 = i + $T0
+abc[i] = $T1  
+$T2 = i + 1
+i = $T2  
+if_6_else:
+$T3 = i + 1
+i = $T3  
+j while_2_beg
+while_2_end:
+write " test_while output a[0] a[1] a[2]:" 
+write abc[0] 
+write "  " 
+write abc[1] 
+write "  " 
+write abc[2] 
+funcend
+function char test_switch
+var char flag
+write " test_switch input one char:a or b  " 
+read flag 
+bne flag 'a' case_1_1_end
+write "  " 
+write 97 
+write " " 
+$T0 = 65 + 97
+write $T0 
+j case_1_end
+case_1_1_end:
+bne flag 'b' case_1_2_end
+write "  " 
+write 98 
+write " " 
+$T1 = 66 + 98
+write $T1 
+j case_1_end
+case_1_2_end:
+case_1_end:
+ret 'F' 
+funcend
+function int fun1
+para char a
+para int b
+$T0 = a - b
+ret $T0 
+funcend
+function void test_scanf_printf
+var char a
+var char b
+write " enter:" 
+read a 
+read b 
+write "  " 
+push a 
+push 32 
+call fun1 
+$T0 = RET  
+write $T0 
+write "  " 
+push b 
+push 32 
+call fun1 
+$T1 = RET  
+write $T1 
+funcend
+function char test_return
+call test_switch 
+$T0 = RET  
+ret $T0 
+funcend
+function void test
+var int flag
+var char ch
+read flag 
+bne flag 1 case_2_1_end
+i = 0  
+push 2 
+push 3 
+push 4 
+push 5 
+push 6 
+call expre 
+j case_2_end
+case_2_1_end:
+bne flag 2 case_2_2_end
+push 2 
+push 3 
+call test_if 
+call test_while 
+call test_switch 
+j case_2_end
+case_2_2_end:
+bne flag 3 case_2_3_end
+call test_scanf_printf 
+j case_2_end
+case_2_3_end:
+bne flag 4 case_2_4_end
+call test_return 
+$T0 = RET  
+ch = $T0  
+write "  " 
+write ch 
+j case_2_end
+case_2_4_end:
+write "error input!@#$%%^&/|\{[('')]}~" 
+case_2_end:
+funcend
+function void main
+call test 
+exit

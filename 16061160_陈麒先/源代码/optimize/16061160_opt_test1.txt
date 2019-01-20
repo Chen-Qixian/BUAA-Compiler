@@ -1,0 +1,14 @@
+const int a = 2;
+const char ch = 'a';
+int b,c;
+
+void main(){
+	int d;
+	d = 0;
+	switch(b - b / 2 * 2){
+		case 0: b = b + 1;
+		default: {
+
+		}
+	} 
+}

@@ -1,0 +1,45 @@
+- "main.h"
+	#include "init.h"
+		#include "parameters.h"
+			#include <iostream>
+			#include <fstream>
+			#include <sstream>
+			#include <string>
+	#include "grammar.h"
+		#include "lexical.h"
+			#include "parameters.h"
+				#include <iostream>
+				#include <fstream>
+				#include <sstream>
+				#include <string>
+			#include <cstring>
+
+- "init.h"
+	#include "parameters.h"
+		#include <iostream>
+		#include <fstream>
+		#include <sstream>
+		#include <string>
+
+- "parameters.h"
+	#include <iostream>
+	#include <fstream>
+	#include <sstream>
+	#include <string>
+
+- "lexical.h"
+	#include "parameters.h"
+		#include <iostream>
+		#include <fstream>
+		#include <sstream>
+		#include <string>
+	#include <cstring>
+
+- "grammar.h"
+	#include "lexical.h"
+		#include "parameters.h"
+			#include <iostream>
+			#include <fstream>
+			#include <sstream>
+			#include <string>
+		#include <cstring>

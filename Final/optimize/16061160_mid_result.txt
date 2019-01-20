@@ -1,0 +1,345 @@
+const int con1 = 1
+const int con2 = 2
+const char ch1 = '_'
+var int i
+var int j
+array int array
+var int scope_var
+var char ch
+function int Fibonacci
+para int n
+bne n 1 if_1_else
+ret 1 
+funcend
+if_1_else:
+bne n 2 if_2_else
+ret 1 
+funcend
+if_2_else:
+$T0 = -1 + n
+push $T0 
+call Fibonacci 
+$T1 = RET  
+$T2 = -2 + n
+push $T2 
+call Fibonacci 
+$T3 = RET  
+$T4 = $T1 + $T3
+ret $T4 
+funcend
+function int test_recursion
+push 8 
+call Fibonacci 
+$T0 = RET  
+bne $T0 21 if_3_else
+write "success!" 
+ret 0 
+funcend
+if_3_else:
+write "fail!" 
+ret 0 
+funcend
+function int test_if
+para int plus
+const char flag = 'g'
+var char ch
+ch = 'a'  
+$T0 = ch + plus
+ble $T0 103 if_4_else
+write "success1!" 
+if_4_else:
+beqz ch  if_5_else
+write "success2!" 
+if_5_else:
+beqz 0  if_6_else
+write "fail1!" 
+if_6_else:
+ret 0 
+funcend
+function void test_while
+const int j = 100
+var int sum
+sum = 0  
+i = 0  
+while_1_beg:
+bge i 100 while_1_end
+array[i] = i  
+$T0 = 1 + i
+i = $T0  
+j while_1_beg
+while_1_end:
+i = 0  
+while_2_beg:
+bge i 100 while_2_end
+$T1 = sum + i
+sum = $T1  
+$T2 = 1 + i
+i = $T2  
+j while_2_beg
+while_2_end:
+bne sum 4950 if_7_else
+write "success!" 
+funcend
+if_7_else:
+write "fail!" 
+funcend
+function void test_switch
+var char flag
+flag = 'a'  
+bne flag 'a' case_1_1_end
+write "success!" 
+j case_1_end
+case_1_1_end:
+write "fail!" 
+case_1_end:
+funcend
+function int to_upper
+para char a
+para int b
+$T0 = a - b
+ret $T0 
+funcend
+function void test_scanf_printf
+var char a
+var char b
+var char c
+read a 
+read b 
+read c 
+write "Input is:" 
+write a 
+write b 
+write c 
+push a 
+push 32 
+call to_upper 
+$T0 = RET  
+write $T0 
+push b 
+push 32 
+call to_upper 
+$T1 = RET  
+write $T1 
+push c 
+push 32 
+call to_upper 
+$T2 = RET  
+write $T2 
+funcend
+function void test_relation_operator
+para int x
+para int y
+bne x y if_8_else
+write " x==y:true" 
+if_8_else:
+ble x y if_9_else
+write " x>y:true" 
+if_9_else:
+bge x y if_10_else
+write " x<y:true" 
+if_10_else:
+blt x y if_11_else
+write " x>=y:true" 
+if_11_else:
+bgt x y if_12_else
+write " x<=y:true" 
+if_12_else:
+beq x y if_13_else
+write " x!=y:true" 
+if_13_else:
+funcend
+function void test_expression
+var int x
+var int y
+var int z
+array int A
+x = 10  
+y = 1  
+A[0] = 2  
+$T0 = 1 * x
+$T1 = $T0 * A[0]
+$T2 = 0 - y
+$T3 = $T1 * $T2
+$T4 = $T3 * y
+$T5 = $T4 / 2
+push 'a' 
+push 32 
+call to_upper 
+$T6 = RET  
+$T7 = 0 - $T5
+$T8 = $T7 + '*'
+$T9 = $T8 + $T6
+$T10 = $T9 - 'A'
+$T11 = x + $T10
+z = $T11  
+bne z 62 if_14_else
+write "success!" 
+funcend
+if_14_else:
+write "fail!" 
+funcend
+function void test_symbol
+var char _a1
+var char _a2
+var char _a3
+var char _a4
+var char _a5
+var int aa
+var int Aa
+array int array
+var int i
+var int sum
+_a1 = '*'  
+_a2 = '/'  
+_a3 = '+'  
+_a4 = '-'  
+_a5 = '_'  
+aa = 1  
+Aa = 0  
+bne aa 0 if_15_else
+write "fail1!" 
+if_15_else:
+i = 0  
+$T0 = _a1 + _a2
+$T1 = $T0 + _a3
+$T2 = $T1 + _a4
+$T3 = $T2 + _a5
+sum = $T3  
+while_3_beg:
+bge i 10 while_3_end
+array[i] = i  
+$T4 = 1 + i
+i = $T4  
+j while_3_beg
+while_3_end:
+while_4_beg:
+bge i 20 while_4_end
+$T5 = -10 + 'a'
+$T6 = $T5 + i
+array[i] = $T6  
+$T7 = 1 + i
+i = $T7  
+j while_4_beg
+while_4_end:
+while_5_beg:
+bge i 30 while_5_end
+$T8 = -20 + 'A'
+$T9 = $T8 + i
+array[i] = $T9  
+$T10 = 1 + i
+i = $T10  
+j while_5_beg
+while_5_end:
+i = 0  
+while_6_beg:
+bge i 30 while_6_end
+$T11 = sum + array[i]
+sum = $T11  
+$T12 = 1 + i
+i = $T12  
+j while_6_beg
+while_6_end:
+bne sum 2027 if_16_else
+write "success!" 
+funcend
+if_16_else:
+write "fail2!" 
+funcend
+function void local_scope
+var int scope_var
+scope_var = 10  
+write "the local scope_var = " 
+write scope_var 
+funcend
+function void test_scope
+var int tem
+scope_var = 20  
+tem = scope_var  
+write "the global scope_var = " 
+write scope_var 
+call local_scope 
+write "the global scope_var = " 
+write scope_var 
+bne tem scope_var if_17_else
+write "success!" 
+funcend
+if_17_else:
+write "fail!" 
+funcend
+function void test
+var int i
+var int j
+var int k
+j = 0  
+k = 9  
+while_7_beg:
+bge j k while_7_end
+read i 
+bne i 0 case_2_1_end
+write "test_recursion begin:" 
+call test_recursion 
+j case_2_end
+case_2_1_end:
+bne i 1 case_2_2_end
+write "test_if begin:" 
+push 20 
+call test_if 
+j case_2_end
+case_2_2_end:
+bne i 2 case_2_3_end
+write "test_while begin:" 
+call test_while 
+j case_2_end
+case_2_3_end:
+bne i 3 case_2_4_end
+write "test_switch begin:" 
+call test_switch 
+j case_2_end
+case_2_4_end:
+bne i 4 case_2_5_end
+write "test_scanf_printf begin:" 
+call test_scanf_printf 
+j case_2_end
+case_2_5_end:
+bne i 5 case_2_6_end
+write "test_expression begin:" 
+call test_expression 
+j case_2_end
+case_2_6_end:
+bne i 6 case_2_7_end
+write "test_symbol begin:" 
+call test_symbol 
+j case_2_end
+case_2_7_end:
+bne i 7 case_2_8_end
+write "test_relation_operator begin:" 
+push 3 
+push 6 
+call test_relation_operator 
+push 7 
+push 5 
+call test_relation_operator 
+push 2 
+push 2 
+call test_relation_operator 
+j case_2_end
+case_2_8_end:
+bne i 8 case_2_9_end
+write "test_scope begin:" 
+call test_scope 
+j case_2_end
+case_2_9_end:
+case_2_end:
+write "*********************" 
+$T0 = 1 + j
+j = $T0  
+j while_7_beg
+while_7_end:
+ch = 95  
+write "ch=" 
+write ch 
+write "@#$$&*^^^^test end" 
+funcend
+function void main
+call test 
+exit

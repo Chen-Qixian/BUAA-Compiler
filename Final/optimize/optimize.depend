@@ -1,0 +1,127 @@
+# depslib dependency file v1.0
+1544188920 source:c:\users\cqx\desktop\assignment\compiler\final\origin\enter.cpp
+	"enter.h"
+
+1544157726 c:\users\cqx\desktop\assignment\compiler\final\origin\enter.h
+	"parameters.h"
+	"error.h"
+
+1544188699 c:\users\cqx\desktop\assignment\compiler\final\origin\parameters.h
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+
+1544157736 c:\users\cqx\desktop\assignment\compiler\final\origin\error.h
+	"parameters.h"
+
+1546249378 source:c:\users\cqx\desktop\assignment\compiler\final\origin\error.cpp
+	"error.h"
+
+1545874865 source:c:\users\cqx\desktop\assignment\compiler\final\origin\functional.cpp
+	"functional.h"
+
+1544157759 c:\users\cqx\desktop\assignment\compiler\final\origin\functional.h
+	"lexical.h"
+
+1546268603 c:\users\cqx\desktop\assignment\compiler\final\origin\lexical.h
+	"error.h"
+	<cstring>
+	<cstdlib>
+
+1546270690 source:c:\users\cqx\desktop\assignment\compiler\final\origin\lexical.cpp
+	"lexical.h"
+
+1545660171 source:c:\users\cqx\desktop\assignment\compiler\final\origin\main.cpp
+	"main.h"
+
+1544157815 c:\users\cqx\desktop\assignment\compiler\final\origin\main.h
+	"init.h"
+	"mid2mips.h"
+
+1544191074 c:\users\cqx\desktop\assignment\compiler\final\origin\init.h
+	"parameters.h"
+	"error.h"
+
+1544157825 c:\users\cqx\desktop\assignment\compiler\final\origin\mid2mips.h
+	"grammar.h"
+
+1544157775 c:\users\cqx\desktop\assignment\compiler\final\origin\grammar.h
+	"functional.h"
+	"enter.h"
+
+1545874878 source:c:\users\cqx\desktop\assignment\compiler\final\origin\mid2mips.cpp
+	"mid2mips.h"
+
+1544190937 source:c:\users\cqx\desktop\assignment\compiler\final\origin\parameters.cpp
+	"parameters.h"
+
+1545830192 source:c:\users\cqx\desktop\assignment\compiler\final\origin\init.cpp
+	"init.h"
+
+1545879598 source:c:\users\cqx\desktop\assignment\compiler\final\origin\grammar.cpp
+	"grammar.h"
+
+1544188920 source:c:\users\cqx\desktop\assignment\compiler\final\optimize\enter.cpp
+	"enter.h"
+
+1544157726 c:\users\cqx\desktop\assignment\compiler\final\optimize\enter.h
+	"parameters.h"
+	"error.h"
+
+1546315712 c:\users\cqx\desktop\assignment\compiler\final\optimize\parameters.h
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+
+1544157736 c:\users\cqx\desktop\assignment\compiler\final\optimize\error.h
+	"parameters.h"
+
+1546249378 source:c:\users\cqx\desktop\assignment\compiler\final\optimize\error.cpp
+	"error.h"
+
+1545874865 source:c:\users\cqx\desktop\assignment\compiler\final\optimize\functional.cpp
+	"functional.h"
+
+1544157759 c:\users\cqx\desktop\assignment\compiler\final\optimize\functional.h
+	"lexical.h"
+
+1546268603 c:\users\cqx\desktop\assignment\compiler\final\optimize\lexical.h
+	"error.h"
+	<cstring>
+	<cstdlib>
+
+1545830192 source:c:\users\cqx\desktop\assignment\compiler\final\optimize\init.cpp
+	"init.h"
+
+1544191074 c:\users\cqx\desktop\assignment\compiler\final\optimize\init.h
+	"parameters.h"
+	"error.h"
+
+1546270690 source:c:\users\cqx\desktop\assignment\compiler\final\optimize\lexical.cpp
+	"lexical.h"
+
+1545660171 source:c:\users\cqx\desktop\assignment\compiler\final\optimize\main.cpp
+	"main.h"
+
+1544157815 c:\users\cqx\desktop\assignment\compiler\final\optimize\main.h
+	"init.h"
+	"mid2mips.h"
+
+1544157825 c:\users\cqx\desktop\assignment\compiler\final\optimize\mid2mips.h
+	"grammar.h"
+
+1544157775 c:\users\cqx\desktop\assignment\compiler\final\optimize\grammar.h
+	"functional.h"
+	"enter.h"
+
+1545874878 source:c:\users\cqx\desktop\assignment\compiler\final\optimize\mid2mips.cpp
+	"mid2mips.h"
+
+1544190937 source:c:\users\cqx\desktop\assignment\compiler\final\optimize\parameters.cpp
+	"parameters.h"
+
+1546327400 source:c:\users\cqx\desktop\assignment\compiler\final\optimize\grammar.cpp
+	"grammar.h"
+

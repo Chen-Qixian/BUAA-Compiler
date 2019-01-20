@@ -1,0 +1,36 @@
+name  obj  type  len  adr 
+cha	0	1	0	97	
+chb	0	1	0	98	
+CHA	0	1	0	65	
+CHB	0	1	0	66	
+I	0	0	0	3	
+c	1	0	0	0	
+d	1	0	0	1	
+abc	3	0	3	2	
+i	1	0	0	5	
+expre	2	0	5	9	
+a	4	0	0	0	
+b	4	0	0	1	
+x	4	0	0	2	
+y	4	0	0	3	
+z	4	0	0	4	
+test_if	2	2	3	0	
+a	4	0	0	0	
+b	4	0	0	1	
+temp	1	0	0	2	
+test_while	2	2	0	4	
+test_switch	2	1	1	0	
+flag	1	1	0	0	
+fun1	2	0	2	1	
+a	4	1	0	0	
+b	4	0	0	1	
+test_scanf_printf	2	2	2	2	
+a	1	1	0	0	
+b	1	1	0	1	
+test_return	2	1	0	1	
+test	2	2	2	1	
+flag	1	0	0	0	
+ch	1	1	0	1	
+main	2	2	0	0	
+0 9 15 19 20 22 25 28 29 32 33 
+" test_expression c=" " test_if output the less one " "output " " test_while output a[0] a[1] a[2]:" "  " "  " " test_switch input one char:a or b  " "  " " " "  " " " " enter:" "  " "  " "  " "error input!@#$%%^&/|\{[('')]}~" 

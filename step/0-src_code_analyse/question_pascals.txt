@@ -1,0 +1,17 @@
+44:objecttyp = (konstant, vvariable, typel, prozedure, funktion ); 名称是否打印错误
+228： errpos := cc + 3;为何
+2905：period是什么？
+404：if ch = '.'  {*连读到两个小数点？认为该符号为：*}
+errpos的更新逻辑是什么？
+754：block中传入的参数fsys的含义是什么？ 应该是允许使用的符号集
+	那么他的更新逻辑又是什么？
+794: test( [ident] + blockbegsys, fsys, 6 ) {*这个测试时什么意思?*}
+929:constant( [colon, rbrack, rparent, ofsy] + fsys, low );{*怎么理解？*}
+1302：emit(32+ord(isfun)) 这个操作符是什么含义？
+1519:expression作用？
+1695：x.typ := notyp {*修改第一个操作数类型*} 改成notype作用是？
+1728:if x.typ > reals 怎么理解？
+1803:x.typ := bools  {*为何要变成bool?*}
+2193：funktion:   if tab[i].ref = display[level]
+                                      then assignment(tab[i].lev+1,0)
+                                      else error(45)

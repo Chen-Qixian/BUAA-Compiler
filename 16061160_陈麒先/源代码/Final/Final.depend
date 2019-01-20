@@ -1,0 +1,134 @@
+# depslib dependency file v1.0
+1546596173 source:c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\enter.cpp
+	"enter.h"
+
+1546593657 c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\enter.h
+	"parameters.h"
+	"error.h"
+
+1546597242 c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\parameters.h
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+
+1546593762 c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\error.h
+	"parameters.h"
+
+1546593788 source:c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\functional.cpp
+	"functional.h"
+
+1546593806 c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\functional.h
+	"lexical.h"
+
+1546594113 c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\lexical.h
+	"error.h"
+	<cstring>
+	<cstdlib>
+
+1546596984 source:c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\grammar.cpp
+	"grammar.h"
+
+1546593872 c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\grammar.h
+	"functional.h"
+	"enter.h"
+
+1546593898 source:c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\init.cpp
+	"init.h"
+
+1546594077 c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\init.h
+	"parameters.h"
+	"error.h"
+
+1546596417 source:c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\lexical.cpp
+	"lexical.h"
+
+1546594147 source:c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\mid2mips.cpp
+	"mid2mips.h"
+
+1546602983 c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\mid2mips.h
+	"grammar.h"
+
+1546601226 source:c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\parameters.cpp
+	"parameters.h"
+
+1546600831 source:c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\main.cpp
+	"main.h"
+
+1546593557 c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\main.h
+	"init.h"
+	"mid2mips.h"
+
+1546596652 source:c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\error.cpp
+	"error.h"
+
+1546597301 c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\optimize.h
+	"functional.h"
+	"enter.h"
+
+1546597020 source:c:\users\cqx\desktop\16061160_陈麒先_申优\源代码\final\optimize.cpp
+	"grammar.h"
+
+1546596173 source:c:\users\cqx\desktop\16061160_陈麒先\源代码\final\enter.cpp
+	"enter.h"
+
+1546593657 c:\users\cqx\desktop\16061160_陈麒先\源代码\final\enter.h
+	"parameters.h"
+	"error.h"
+
+1546597242 c:\users\cqx\desktop\16061160_陈麒先\源代码\final\parameters.h
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+
+1546593762 c:\users\cqx\desktop\16061160_陈麒先\源代码\final\error.h
+	"parameters.h"
+
+1546596652 source:c:\users\cqx\desktop\16061160_陈麒先\源代码\final\error.cpp
+	"error.h"
+
+1546593788 source:c:\users\cqx\desktop\16061160_陈麒先\源代码\final\functional.cpp
+	"functional.h"
+
+1546593806 c:\users\cqx\desktop\16061160_陈麒先\源代码\final\functional.h
+	"lexical.h"
+
+1546594113 c:\users\cqx\desktop\16061160_陈麒先\源代码\final\lexical.h
+	"error.h"
+	<cstring>
+	<cstdlib>
+
+1546607088 source:c:\users\cqx\desktop\16061160_陈麒先\源代码\final\grammar.cpp
+	"grammar.h"
+
+1546593872 c:\users\cqx\desktop\16061160_陈麒先\源代码\final\grammar.h
+	"functional.h"
+	"enter.h"
+
+1546593898 source:c:\users\cqx\desktop\16061160_陈麒先\源代码\final\init.cpp
+	"init.h"
+
+1546594077 c:\users\cqx\desktop\16061160_陈麒先\源代码\final\init.h
+	"parameters.h"
+	"error.h"
+
+1546596417 source:c:\users\cqx\desktop\16061160_陈麒先\源代码\final\lexical.cpp
+	"lexical.h"
+
+1546600831 source:c:\users\cqx\desktop\16061160_陈麒先\源代码\final\main.cpp
+	"main.h"
+
+1546593557 c:\users\cqx\desktop\16061160_陈麒先\源代码\final\main.h
+	"init.h"
+	"mid2mips.h"
+
+1546602983 c:\users\cqx\desktop\16061160_陈麒先\源代码\final\mid2mips.h
+	"grammar.h"
+
+1547174199 source:c:\users\cqx\desktop\16061160_陈麒先\源代码\final\mid2mips.cpp
+	"mid2mips.h"
+
+1546601226 source:c:\users\cqx\desktop\16061160_陈麒先\源代码\final\parameters.cpp
+	"parameters.h"
+

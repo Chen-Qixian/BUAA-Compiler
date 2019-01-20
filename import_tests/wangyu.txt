@@ -1,0 +1,160 @@
+const int one = 1, two = +2, _elev = -11;
+const int sum12 = 3;
+const char _ = '_', a = 'a', _A = 'A';
+const char _b1 = 'b';
+
+int n1, array[10];
+int N2;
+char c_1, str[100];
+char _C_2;
+
+void printf_str_num(int num){
+	printf("num = ",num);
+}
+void printf_char(char c){
+	printf(c);
+}
+void printf_num(int num){
+	printf(num);
+}
+void printf_str(){
+	printf("This is a test string!");
+}
+void printf_judge(char c){
+	switch(c){
+		case 'a':printf("a-true");
+		case 'b':{
+			printf("b-false");
+		}
+		default: {
+			printf("other-error:");
+			printf_char(c);
+		}
+	}
+}
+void printf_njudge(int r){
+	switch(r){
+		case 0: {
+			printf("0-false");
+			return;
+		}
+		case 1: {
+			printf("1-true");
+			return;
+		}
+	}
+	printf("other-error:",r);
+}
+
+int fac(int n){	
+	if (n==one) return (1);
+	return (n*fac(n-1));
+}
+int add(int x, int y){	
+	int sum12;
+	sum12 = x+y;
+	return (sum12);
+}
+char ret_space(){	
+	const char space = 's';
+	return (space);
+}
+char test(char c){
+	const char z = 'z', _Z = 'Z';
+	char result;
+	if((c) >= (a)){
+		if((c)<=(z)){
+			result = 'a';
+			return (result);
+		}
+	}
+	if((c) >= (_A)){
+		if((c) <= (_Z)){
+			result = 'b';
+			return (result);
+		}
+	}
+	result = c;
+	return (result);
+}
+void main(){
+	const int max = 8;
+	int num[8], x, y, i,j,k;
+	char s[10], ch;
+	x = -2;
+	printf_num(x);
+	y = -3+x;
+	printf_num(y);
+	x = x*(x+y);
+	printf_num(x);
+	y = -_elev-x;
+	printf_num(y);
+	k = 6;
+	num[0] = 0;
+	num[1] = ++1;
+	num[2] = --2;
+	num[3] = -+3;
+	num[4] = +-4;
+	num[5] = x + num[0] * x;
+	num[k] = x+num[1];
+	num[k+1] = --2*(k+2);
+	i = 0;
+	while(i < max){
+		printf_num(num[i]);
+		i = i+1;
+	}
+	while(0) printf_char(_);
+	printf("k>0?k:",k);
+	if(k > 0) printf_judge(a);	
+	if(k != +100) k = 100;
+	if(k == 100) printf_str();
+	ch = 'A';
+	if((ch) == (_A)) printf_str();	
+	if((ch) != (a)) printf("A != a");
+	s[0] = 'a';
+	s[1] = 'Z';
+	if((ch) >= (s[0])) printf("ASCII: A >= a");
+	if((ch) > (s[0])) printf("ASCII: A > a");
+	if((ch) <= (s[1])) printf("ASCII: A <= Z");
+	if((ch) < (s[1])) printf("ASCII: A < Z");
+	if((ch) == (a)) printf("ch == a");
+	if(one){	
+		printf_num(one);
+	}
+	
+	;
+	{;}
+	{{{{;}}}}
+	printf("read char:");
+	scanf(ch);
+	printf_char(ch);
+	printf("read\n i:");
+	scanf(i);
+	printf_str_num(i);
+	printf("read j,k:");
+	scanf(j,k);
+	printf_str_num(j);
+	printf_str_num(k);
+	printf("test defination");
+	printf_judge(a);
+	printf_judge(_b1);
+	printf_judge(_);
+	printf_njudge(1);
+	printf_njudge(0);
+	printf_njudge(sum12);
+	printf("factorial of 4:", fac(4));
+	printf("value of j+k:",add(j,k));
+	printf_char(ret_space());
+	printf("a is in [a-z,A-Z]?");
+	printf_judge(test('a'));
+	printf("_ is in [a-z,A-Z]?");
+	printf_judge(test('_'));
+	printf_char(_);
+	printf_char(a);
+	printf_char(_A);
+	printf_char(_b1);
+	printf_num(one);
+	printf_num(two);
+	printf_num(_elev);
+	printf_num(sum12);
+}

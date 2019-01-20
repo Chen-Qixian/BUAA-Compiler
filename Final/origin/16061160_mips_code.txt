@@ -1,0 +1,15 @@
+.globl main
+.data
+str_newline: .asciiz "\n"
+.text
+main:
+move $fp $sp
+subi $sp $sp 8
+li $a0 97
+li $v0 11
+syscall
+la $a0 str_newline
+li $v0 4
+syscall
+li $v0 10
+syscall

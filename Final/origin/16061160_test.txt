@@ -1,0 +1,446 @@
+const int global_single_int = 2;
+const int global_int_1 = 3 , global_int_2 = 4;
+const char global_single_char = '_';
+const char global_char_1 = '+' , global_char_2 = '9';
+int a;
+int b,c;
+int d[10];
+int e[20],f,g;
+char ch1;
+char ch2,ch3;
+char ch4[10];
+char ch5,ch6[19];
+int n;
+int arr[10],flag[10];
+
+int func1(){
+	return (global_int_1);
+}
+
+void test1(){
+	const int local_single_int = 100;
+	const int local_int_1 = 101 , local_int_2 = 102;
+	const char local_single_char = '-';
+	const char local_char_1 = '*' , local_char_2 = '/';
+	int a1;
+	int b1,c1;
+	int d1[10];
+	int e1[20],f1,g1;
+	char ch7;
+	char ch8,ch9;
+	char ch10[10];
+	char ch11,ch12[19];
+	a = 10;
+	b = -11;
+	c = a;
+	d[0] = -b;
+	d[1] = d[0];
+	d[2] = (a + b);
+	d[3] = 2 * (3 + 4) - (2 + 3) / (6 - (3 * 4 - 11));
+	d[4] = 2;
+	a1 = 3;
+	b1 = 4;
+	c1 = 6;
+	f1 = d[4] *(a1 + b1) - (d[4] + a1) / (c1 - (a1 * b1 - (-b)));
+	g1 = d[4] *(a1 + b1 - 1) * 2 - (d[4] + a1 + 5) / (c1 - (a1 * b1 - (-b)));
+	g = d[b1] *(a1 + b1 - 1) * 2 - (d[4] + a1 + 5) / (c1 - (a1 * b1 - (-b)));
+	f = d[d[a1 + 1] + 2] *(a1 + b1 - 1) * 2 - (d[4] + a1 + 5) / (c1 - (a1 * b1 - (-b)));
+	e[0] = func1();
+	e[1] = func1() + a;
+	e[2] = func1() * d[4];
+	e[3] = d[d[a1 + 1] + 2] *(func1() + b1 - 1) * 2 - (d[4] + a1 + 5) / (c1 - (func1() * b1 - (-b)));
+	e1[0] = 'a' + 1;
+	ch12[1] = 'A';
+	e1[1] = ch12[1] * d[4];
+	printf("  a = " , a);
+	printf("  b = " , b);
+	printf("  c = " , c);
+	printf("  d[0] = " , d[0]);
+	printf("  d[1] = " , d[1]);
+	printf("  d[2] = " , d[2]);
+	printf("  d[3] = " , d[3]);
+	printf("  f1 = " , f1);
+	printf("  g1 = " , g1);
+	printf("  f = " , f);
+	printf("  g = " , g);
+	printf("  e[0] = " , e[0]);
+	printf("  e[1] = " , e[1]);
+	printf("  e[2] = " , e[2]);
+	printf("  e[3] = " , e[3]);
+	printf("  e1[0] = " , e1[0]);
+	printf("  e1[1] = " , e1[1]);
+}
+
+void test2(){
+	const int local_single_int = 100;
+	const int local_int_1 = 101 , local_int_2 = 102;
+	const char local_single_char = '-';
+	const char local_char_1 = '*' , local_char_2 = '/';
+	int a1;
+	int b1,c1;
+	int d1[10];
+	int e1[20],f1,g1;
+	char ch7;
+	char ch8,ch9;
+	char ch10[10];
+	char ch11,ch12[19];
+	a = 1;
+	b = 2;
+	c = 3;
+	d[4] = 4;
+	d[5] = 5;
+	e[6] = 6;
+	f = 7;
+	g = 8;
+	e[9] = 9;
+	ch1 = 'a';
+	ch2 = 'b';
+	ch3 = 'c';
+	ch4[1] = 'A';
+	ch4[2] = 'B';
+	ch5 = 'd';
+	ch6[3] = 'C';
+	ch6[4] = 'D';
+	a1 = 11;
+	b1 = 12;
+	c1 = 13;
+	d1[4] = 14;
+	d1[5] = 15;
+	e1[16] = 16;
+	f1 = 17;
+	g1 = 18;
+	e1[19] = 19;
+	ch7 = 'e';
+	ch8 = 'f';
+	ch9 = 'g';
+	ch10[1] = 'E';
+	ch10[2] = 'F';
+	ch11 = 'h';
+	ch12[13] = 'G';
+	ch12[14] = 'H';
+	printf("  global_single_int =");
+	printf(global_single_int);
+	printf("  global_int_1 = " , global_int_1);
+	printf("  global_int_2 = " , global_int_2);
+	printf("  global_single_char =" , global_single_char);
+	printf("  global_char_1 = " , global_char_1);
+	printf("  global_char_2 = " , global_char_2);
+	printf("  local_single_int =" , local_single_int);
+	printf("  local_int_1 = " , local_int_1);
+	printf("  local_int_2 = " , local_int_2);
+	printf("  local_single_char =" , local_single_char);
+	printf("  local_char_1 = " , local_char_1);
+	printf("  local_char_2 = " , local_char_2);
+	printf("  a = " , a);
+	printf("  b = " , b);
+	printf("  c = " , c);
+	printf("  d[4] = " , d[4]);
+	printf("  d[5] = " , d[5]);
+	printf("  e[6] = " , e[6]);
+	printf("  f = " , f);
+	printf("  g = " , g);
+	printf("  e[9] = " , e[9]);
+	printf("  ch1 = " , ch1);
+	printf("  ch2 = " , ch2);
+	printf("  ch3 = " , ch3);
+	printf("  ch4[1] = " , ch4[1]);
+	printf("  ch4[2] = " , ch4[2]);
+	printf("  ch5 = " , ch5);
+	printf("  ch6[3] = " , ch6[3]);
+	printf("  ch6[4] = " , ch6[4]);
+	printf("  a1 = " , a1);
+	printf("  b1 = " , b1);
+	printf("  c1 = " , c1);
+	printf("  d1[4] = " , d1[4]);
+	printf("  d1[5] = " , d1[5]);
+	printf("  e1[16] = " , e1[16]);
+	printf("  f1 = " , f1);
+	printf("  g1 = " , g1);
+	printf("  e1[19] = " , e1[19]);
+	printf("  ch7 = " , ch7);
+	printf("  ch8 = " , ch8);
+	printf("  ch9 = " , ch9);
+	printf("  ch10[1] = " , ch10[1]);
+	printf("  ch10[2] = " , ch10[2]);
+	printf("  ch11 = " , ch11);
+	printf("  ch12[13] = " , ch12[13]);
+	printf("  ch12[14] = " , ch12[14]);
+	return;
+}
+
+void test3(){
+	const int local_single_int = 100;
+	const int local_int_1 = 101 , local_int_2 = 102;
+	const char local_single_char = '-';
+	const char local_char_1 = '*' , local_char_2 = '/';
+	int a1;
+	int b1,c1;
+	int d1[10];
+	int e1[20],f1,g1;
+	char ch7;
+	char ch8,ch9;
+	char ch10[10];
+	char ch11,ch12[19];
+	a = 1;
+	b = 2;
+	c = 3;
+	d[4] = 4;
+	d[5] = 5;
+	e[6] = 6;
+	f1 = 7;
+	g1 = 8;
+	e1[9] = 9;
+	if(a == 1){
+		printf(" # 1 ");
+	}
+	if(b == c){
+		printf(" # 2 ");
+	}
+	if(c != d[4]){
+		printf(" # 3 ");
+	}
+	if(d[4] != 4){
+		printf(" # 4 ");
+	}
+	if(a > 0){
+		printf(" # 5 ");
+	}
+	if(a > f1 / 7){
+		printf(" # 6 ");
+	}
+	if(b >= d[4] - 2){
+		printf(" # 7 ");
+	}
+	if(b >= --7){
+		printf(" # 8 ");
+	}
+	if(+e1[9] - g1 < e1[9] + g1){
+		printf(" # 9 ");
+	}
+	if(g1 * e1[9] < f1){
+		printf(" # 10 ");
+	}
+	if(3 <= 5){
+		printf(" # 11 ");
+	}
+	if(5 <= 1){
+		printf(" # 12 ");
+	}
+	if(5 <= 5){
+		printf(" # 13 ");
+	}
+	if(b - b){
+		printf(" # 14 ");
+	}
+	if(b){
+		printf(" # 15 ");
+	}
+	a = 1;
+	while(a < 10){
+		printf(a);
+		a = a + 1;
+	}
+	while(a){
+		printf(a);
+		a = a - 2;
+	}
+	a1 = 3;
+	switch(a1 + e[6]){
+		case 102: printf(" # 16 ");
+		case 9:{
+			printf(" # 17 ");
+		}
+		case 3:{
+
+		}
+		default:;
+	}
+	ch12[8] = 'a';
+	switch(ch12[8]){
+		case '_':{
+			printf(" # 18 ");
+		}
+		case 'a':{
+			printf(" # 19 ");
+		}
+		case 'j':printf(" # 20 ");
+		default:{
+
+		}
+	}
+	switch(c){
+		case 1:{
+			printf(" # 22 ");
+		}
+		case 2:{
+			printf(" # 24 ");
+		}
+	}
+	switch(e1[9]){
+		case 2:{
+			printf(" # 26 ");
+		}
+		case 7:{
+			printf(" # 28 ");
+		}
+		default: {
+			printf(" # 23 ");
+		}
+	}
+	return;
+}
+
+int fac(int n){
+	if(n == 1) return (1);
+	return (n * fac(n - 1));
+}
+
+char getch3(char ch , char ch1 , char ch2){
+	const int func7_const1 = 3,func7_const2 = 2;
+	const char func7_const3 = '3',func7_const4 = 'o';
+	int a1;
+	int e1[10];
+	char c;
+	c = ch2;
+	return(c);
+}
+
+char getch2(char ch){
+	const int func6_const1 = 3,func6_const2 = 2;
+	const char func6_const3 = '3',func6_const4 = 'o';
+	int a1;
+	int e1[10];
+	char c;
+	return(ch);
+}
+
+char getch1(){
+	const int func5_const1 = 3,func5_const2 = 2;
+	const char func5_const3 = 't',func5_const4 = '_';
+	int a1;
+	int e1[10];
+	char c;
+	return(global_char_1);
+}
+
+int add_mult3(int x , int y){
+	const int func3_const1 = 3,func3_const2 = 2;
+	int a1;
+	int e1[10];
+	e1[2] = (x + y) * func3_const1;
+	return (e1[2]);
+}
+
+int add_mult2(int x , int y){
+	const int func2_const1 = 1,func2_const2 = 2;
+	int a1;
+	int e1[10];
+	a1 = (x + y) * func2_const2;
+	return (a1);
+}
+
+int add_mult1(int x , int y , int z){
+	const int func4_const1 = 1,func4_const2 = 2;
+	int a1;
+	int e1[10];
+	a1 = add_mult2(x , y) + z;
+	return (a1);
+}
+
+void print_num(int x){
+	const int func1_const1 = 1,func1_const2 = 2;
+	int a1;
+	int e1[10];
+	a = a + 1;
+	printf(" | print_num called: " , a);
+	printf(" x = " , x);
+}
+
+void test4(){
+	const int local_single_int = 100;
+	const int local_int_1 = 101 , local_int_2 = 102;
+	const char local_single_char = '-';
+	const char local_char_1 = '*' , local_char_2 = '/';
+	int a1;
+	int b1,c1;
+	int d1[12];
+	int e1[20],f1,g1;
+	char ch7;
+	char ch8,ch9;
+	char ch10[10];
+	char ch11,ch12[19];
+	a = 0;
+	b = 5;
+	f1 = 2;
+	f = 3;
+	d[f1] = 6;
+	b1 = 7;
+	d1[f] = 8;
+	d1[10] = 9;
+	d[(b - f) * f1] = 10;
+	print_num(4);
+	print_num(b);
+	print_num(d[f1]);
+	print_num(b1);
+	print_num(d1[f]);
+	print_num(d1[b1 + f]);
+	print_num(d[(b - f) * f1]);
+	a1 = 1;
+	while(a1 < 5){
+		print_num(a1);
+		a1 = a1 + 1;
+	}
+	print_num(add_mult2(a , f1));
+	g1 = add_mult2(1 , 3);
+	print_num(g1);
+	print_num(add_mult3(b , f1));
+	print_num(add_mult1(1 , 2 , 3));
+	printf(getch1());
+	printf(getch2('q'));
+	printf(getch3('s','z','y'));
+	printf(fac(1));
+	printf(fac(5));
+}
+
+void perm(int k){
+	int i;
+	if(k==n){
+		i = 0;		
+		while(i < n){
+			printf(arr[i]);
+			i = i + 1;
+		}
+		printf("========");
+		return;
+	}
+	i = 1;
+	while(i <= n){
+		if(flag[i] == 0){
+			flag[i] = 1;
+			arr[k]=i;
+			perm(k+1);
+			flag[i] = 0;
+		}
+		i = i + 1;
+	}
+}
+
+void test5(){
+	printf("permutation test , please input total number:");
+	scanf(n);
+	perm(0);
+}
+
+void main(){
+	int a;
+	scanf(a);
+	switch(a){
+		case 1: test1();
+		case 2: test2();
+		case 3: test3();
+		case 4: test4();
+		default:{
+			test5();
+		}
+	}
+}

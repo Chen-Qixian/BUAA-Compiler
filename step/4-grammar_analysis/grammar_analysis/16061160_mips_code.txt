@@ -1,0 +1,131 @@
+.globl main
+.data
+str_0: .asciiz " \n"
+str_newline: .asciiz "\n"
+.text
+func_bubble:
+move $fp $sp
+subi $sp $sp 36
+lw $t1 268501040
+li $t2 1
+sub $t0 $t1 $t2
+sw $t0 -4($fp)
+lw $t0 -4($fp)
+sw $t0 268501044
+while_1_beg:
+lw $t0 268501044
+li $t1 0
+ble $t0 $t1 while_1_end
+li $t0 0
+sw $t0 268501048
+while_2_beg:
+lw $t0 268501048
+lw $t1 268501044
+bge $t0 $t1 while_2_end
+lw $t1 268501048
+li $t2 1
+add $t0 $t1 $t2
+sw $t0 -8($fp)
+lw $t0 268501048
+mul $t0 $t0 4
+addi $t0 $t0 268501000
+lw $t0 0($t0)
+lw $t0 -8($fp)
+mul $t0 $t0 4
+addi $t0 $t0 268501000
+lw $t1 0($t0)
+ble $t0 $t1 if_1_else
+lw $t0 268501048
+mul $t0 $t0 4
+addi $t0 $t0 268501000
+lw $t0 0($t0)
+sw $t0 0($fp)
+lw $t1 268501048
+li $t2 1
+add $t0 $t1 $t2
+sw $t0 -12($fp)
+lw $t0 -12($fp)
+mul $t0 $t0 4
+addi $t0 $t0 268501000
+lw $t0 0($t0)
+lw $t1 268501048
+mul $t1 $t1 4
+addi $t1 $t1 268501000
+sw $t0 0($t1)
+lw $t1 268501048
+li $t2 1
+add $t0 $t1 $t2
+sw $t0 -16($fp)
+lw $t0 0($fp)
+lw $t1 -16($fp)
+mul $t1 $t1 4
+addi $t1 $t1 268501000
+sw $t0 0($t1)
+if_1_else:
+lw $t1 268501048
+li $t2 1
+add $t0 $t1 $t2
+sw $t0 -20($fp)
+lw $t0 -20($fp)
+sw $t0 268501048
+j while_2_beg
+while_2_end:
+lw $t1 268501044
+li $t2 1
+sub $t0 $t1 $t2
+sw $t0 -24($fp)
+lw $t0 -24($fp)
+sw $t0 268501044
+j while_1_beg
+while_1_end:
+addi $sp $sp 36
+jr $ra
+main:
+move $fp $sp
+subi $sp $sp 12
+li $v0 5
+syscall
+sw $v0 268501040
+li $t0 3
+sw $t0 268501000
+li $t0 4
+sw $t0 268501004
+li $t0 5
+sw $t0 268501008
+li $t0 2
+sw $t0 268501012
+li $t0 1
+sw $t0 268501016
+sw $ra 4($sp)
+sw $fp 8($sp)
+jal func_bubble
+lw $ra 4($sp)
+lw $fp 8($sp)
+li $t0 0
+sw $t0 268501044
+while_3_beg:
+lw $t0 268501044
+li $t1 5
+bge $t0 $t1 while_3_end
+la $a0 str_0
+li $v0 4
+syscall
+lw $t0 268501044
+mul $t0 $t0 4
+addi $t0 $t0 268501000
+lw $a0 0($t0)
+li $v0 1
+syscall
+la $a0 str_newline
+li $v0 4
+syscall
+lw $t1 268501044
+li $t2 1
+add $t0 $t1 $t2
+sw $t0 0($fp)
+lw $t0 0($fp)
+sw $t0 268501044
+j while_3_beg
+while_3_end:
+li $v0 10
+syscall

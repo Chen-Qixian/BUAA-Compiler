@@ -1,0 +1,10 @@
+const int a = 1;
+void main(){
+	int b;
+	char c;
+	int arr[10];
+	c = 'a';
+	b = c;
+	arr[10] = b;
+	return (1);
+}

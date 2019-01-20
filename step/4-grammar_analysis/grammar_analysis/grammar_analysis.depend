@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1543502812 source:c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\main.cpp
+	"main.h"
+
+1543503699 c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\main.h
+	"init.h"
+	"mid2mips.h"
+
+1543806674 c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\parameters.h
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+
+1544151368 source:c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\init.cpp
+	"init.h"
+
+1542810732 c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\init.h
+	"parameters.h"
+
+1543200205 source:c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\lexical.cpp
+	"lexical.h"
+
+1543240579 c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\lexical.h
+	"error.h"
+	<cstring>
+	<cstdlib>
+
+1543628146 source:c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\parameters.cpp
+	"parameters.h"
+
+1543497888 c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\grammar.h
+	"functional.h"
+	"enter.h"
+
+1544151131 source:c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\grammar.cpp
+	"grammar.h"
+
+1542809107 c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\error.h
+	"parameters.h"
+
+1543727699 source:c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\error.cpp
+	"error.h"
+
+1544145238 c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\functional.h
+	"lexical.h"
+
+1544149364 source:c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\functional.cpp
+	"functional.h"
+
+1543627386 c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\enter.h
+	"parameters.h"
+	"error.h"
+
+1543729146 source:c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\enter.cpp
+	"enter.h"
+
+1544149367 source:c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\mid2mips.cpp
+	"mid2mips.h"
+
+1543595296 c:\users\cqx\desktop\assignment\compiler\step\4-grammar_analysis\grammar_analysis\mid2mips.h
+	"grammar.h"
+

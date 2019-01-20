@@ -1,0 +1,49 @@
+array int a
+var int n
+var int i
+var int j
+function void bubble
+var int t
+$T0 = n - 1
+i = $T0  
+while_1_beg:
+ble i 0 while_1_end
+j = 0  
+while_2_beg:
+bge j i while_2_end
+$T1 = j + 1
+ble a[j] a[$T1] if_1_else
+t = a[j]  
+$T2 = j + 1
+a[j] = a[$T2]  
+$T3 = j + 1
+a[$T3] = t  
+if_1_else:
+$T4 = j + 1
+j = $T4  
+j while_2_beg
+while_2_end:
+$T5 = i - 1
+i = $T5  
+j while_1_beg
+while_1_end:
+funcend
+function void main
+read n 
+a[0] = 3  
+a[1] = 4  
+a[2] = 5  
+a[3] = 2  
+a[4] = 1  
+call bubble 
+i = 0  
+while_3_beg:
+bge i 5 while_3_end
+write " " 
+write a[i] 
+$T0 = i + 1
+i = $T0  
+j while_3_beg
+while_3_end:
+funcend
+exit

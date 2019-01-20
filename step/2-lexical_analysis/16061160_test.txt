@@ -1,0 +1,192 @@
+const int a = +1;
+const int B = 0 , _ = -30 , _d = 49;
+const char c_ = 'c';
+const char c_0 = '_',c1 = '+',_c_2 = '-',C3 = '*',C_4 = '/',_C_5_='0';
+
+int num;
+char ch;
+int array[100];
+char str[10];
+int n1,n_2,N3,array1[10],N_4;
+char s_0[9],ch1,C2,c_3,Ch_4;
+
+int add(int x,int y){
+	return (x + y);
+}
+
+char getch(){
+	const char ch = '_';
+	return (ch);
+}
+
+
+int fac(int n){
+	if(n == 1) return (1);
+	return (n * fac(n - 1));
+}
+
+void print_hello(){
+	printf("Hello world!98");  
+}
+
+void print_num(int n){    
+	printf(n);   
+}
+
+void print_char(char c){  
+	printf(c);
+}
+
+void print_all(int a){     
+	printf("a=",a);
+}
+
+int add_10(int x){     
+	const int ax = 10;
+	return (x + ax);
+}
+
+int add_a(int x){
+	int aa;        
+	aa = 112;
+	return (x + aa);
+}
+
+int add_1_a(int x){
+	const int ca = 13;  
+	int axx;
+	axx = 14;
+	return (x + ca + axx);
+}
+
+void nul(){
+	{{{{{;}}}}}
+	;
+}
+
+void main(){
+	const int a0a = 1;
+	int a1a,a2a,array11[1000],i,j,k;
+	char cha;
+	
+	a1a = 2;
+	a2a = 4 - 1;
+	i = a1a;
+	array11[0] = 9;
+	
+	n1 = -2;
+	print_all(n1);
+	N3 = +-4;
+	print_all(N3);
+	N_4 = -+5;
+	print_all(N_4);
+	array1[0] = --9;
+	print_all(array[0]);
+	k = -array11[6] + n1 * (- i - N3 / array1[0]) + add(N_4,n_2);
+	print_all(k);
+	ch = 'a';
+	print_char(ch);
+	str[1] = 'A';
+	print_char(str[1]);
+	s_0[2] = '+';
+	print_char(s_0[2]);
+	ch1 = '-';
+	print_char(ch1);
+	C2 = '*';
+	print_char(C2);
+	c_3 = '/';
+	print_char(c_3);
+	Ch_4 = '_';
+	print_char(Ch_4);
+
+	if(a0a){
+		array11[2] = array[0] + i;
+		print_num(array11[2]);
+	}
+	if(a1a == 2) print_num(a1a + 1);
+	a1a = a1a + 1;
+	if(a1a > 2){
+		a1a = a1a - a0a;
+		a1a = a1a * 2;
+		print_num(a1a);
+	}
+	if(i < 10) {
+		i = 10;
+		print_num(i);
+	}
+	if(i >= 9) {
+		i = 1;
+		print_num(i);
+	}
+	if(i <= 9) {
+		i = -4;
+		print_num(i);
+	}
+	if(i != 9) {
+		i = +9;
+		print_num(i);
+	}
+	i = i - 9;
+	if(i) {
+		i = 9;
+		print_num(i);
+	}
+	printf(i);
+	
+	j = 5;
+	while(i < j){
+		switch(i){
+			case 0: print_num(i);
+			case 1:{
+				cha = 'c';
+				print_char(cha);
+			}
+			case 2: print_all(i);
+			case 3: print_hello();
+			case 4: print_all(i);
+		}
+		i = i + 1;
+	}
+	cha = 'd';
+	while(i > 3){
+		nul();		
+		switch(cha){
+			case '2': print_num(i);
+			case 'd': print_all(i);
+			default: print_hello();
+		}
+		cha = 'e';
+		i = i - 1;
+	}
+
+	
+	k = add(i + j);
+	print_all(k);
+	print_all(add_a(k));
+	print_all(add_10(k));
+	print_all(add_1_a(k));
+	print_char(getch());
+	
+	print_num(fac(5));
+
+	printf("read i:");
+	scanf(i);
+	print_all(i);
+	printf("read j,k:");
+	scanf(j,k);
+	print_all(j);
+	print_all(k);
+	
+	print_num(a);
+	print_num(B);
+	print_num(_);
+	print_num(_d);
+	print_char(c_);
+	print_char(c_0);
+	print_char(ch1);
+	print_char(_c_2);
+	print_char(C3);
+	print_char(Ch_4);
+	print_char(_C_5_);
+	return ;
+}

@@ -1,0 +1,3 @@
+void main(){
+	printf("he\nl\n\n\n\nlo\nworld" , 1);
+}
